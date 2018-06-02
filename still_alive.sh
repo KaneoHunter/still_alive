@@ -23,7 +23,7 @@ echo ""
 
 while read line; 
 do 
-	(say -v Vicki $line &);
+	mpg123 ~/still_alive/stillalive.mp3;
 	if [[ $line != '.' ]] 
 	    then 
 	        echo $line | grep 'Aperture Science' && show_file ./aperture_logo.txt;	        
